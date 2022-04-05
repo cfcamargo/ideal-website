@@ -234,7 +234,7 @@ main {
   color: white;
   font-size: 1.5rem !important;
   width:120px;
-  text-align: right;
+  text-align: center;
   margin: 0 auto;
 }
 
@@ -264,6 +264,8 @@ main {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+
 
 .cards .card img{
   margin: 0 auto;
@@ -364,6 +366,43 @@ main {
   color: #54671d;
 }
 
+#results .container > h3{
+  font-size: 2.5rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #677A1E;
+}
+
+#results .swipper-content{
+  padding: 4rem;
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+  text-align:center;
+  color: #677A1E;
+  
+}
+
+
+#results .swipper-content h3{
+  font-size: 1.5rem
+  
+}
+
+#results .swipper-content img{
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+.swiper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
 
 @media (min-width: 1100px) {
 
@@ -424,14 +463,15 @@ main {
 
   #home-card {
     
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
+    justify-content: flex-end;
   
   }
 
   #home-card h3{
-    font-size: 2rem;
-    text-align: right;
+    font-size: 1.5rem !important;
+    text-align: center !important;
     color: white;
   }
   
@@ -506,5 +546,48 @@ main {
     text-align: right;
     margin-bottom: 0;
   }
+
+   .swiper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  #results .swipper-content{
+    padding: 4rem;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    height: 700px;
+  }
+
+
+  #results .swipper-content .cover{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  #results .swipper-content .description{
+    height: 100%;
+    display: flex;
+    gap : 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #results .swipper-content .cover img{
+    margin: 0 auto;
+    height: 90% !important;
+    width: auto;
+  }
+  
 
 }
