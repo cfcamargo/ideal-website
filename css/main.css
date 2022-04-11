@@ -404,6 +404,12 @@ main {
 }
 
 
+
+.swiper-button-next,
+.swiper-button-prev{
+  color: #ACCC4C;
+}
+
 @media (min-width: 1100px) {
 
   :root {
