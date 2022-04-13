@@ -298,7 +298,57 @@
 
         </div>
       </section>
+
+      <section id="banner-form">
+        <div class="container">
+          <form
+          action="https://formsubmit.co/contato@geofarmagro.com.br"
+          method="POST"
+        >
+          <h3>Deixe sua mensagem !</h3>
+          <div class="campo">
+            <label for="name">Nome:</label>
+           
+            <input type="text" name="name" required placeholder="Digite seu Nome"/>
+          </div>
+          <div class="campo">
+            <label for="email">Email:</label>
+          <input type="email" name="email" required placeholder="Digite seu melhor Email"/>
+
+          </div>
+          <input
+            type="hidden"
+            name="_autoresponse"
+            value="Obrigado pela sua mensagem !"
+          />
+          <div class="campo-message">
+            <label for="message">Mensagem:</label>
+            <textarea
+            name="message"
+            id="message"
+            cols="50"
+            rows="15"
+            required
+            placeholder="Conte para nós como podemos lhe ajudar..."
+          ></textarea>
+          </div>
+
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://www.geofarmagro.com.br/thanks.html"
+          />
+
+          <input class="submit" type="submit" value="Enviar" />
+        </form>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      
+    </footer>
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

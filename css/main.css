@@ -450,6 +450,63 @@ main {
   margin-bottom: 2rem;
 }
 
+
+
+
+#banner-form{
+  background: url(../assets/images/banner-form.png);
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 1rem;
+}
+
+#banner-form form{
+  background: #ACCC4C;
+  padding: 4rem 1rem;
+  display: grid;
+  gap: 1rem;
+  color:#54671d;
+  max-width:500px;
+}
+
+#banner-form form .campo{
+  width: 100%;
+  background: white;
+  padding: 1rem 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+#banner-form form .campo input{
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 0 1rem
+}
+
+
+#banner-form form textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 1rem 1rem;
+}
+
+#banner-form form .submit{
+  background-color: #54671d;
+  padding: .6rem 3rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#banner-form form .submit:hover{
+
+  filter: brightness(.9);
+
+}
+
 @media (min-width: 1100px) {
 
   :root {
@@ -659,6 +716,11 @@ main {
   
     font-size: 2.2rem;
   
+  }
+
+  #banner-form form{
+   margin-left: auto;
+   padding: 4rem 2rem;
   }
 
 
