@@ -685,6 +685,10 @@ footer .contact-links a i{
   #about {
     grid-template-columns: 1fr 1fr;
   }
+
+  #about .description{
+    align-content: center;
+  }
   
   #about .description p{
     width:80%
