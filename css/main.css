@@ -507,6 +507,87 @@ main {
 
 }
 
+
+footer{
+  background-color: #54671d;
+  padding: 4rem 1rem;
+  
+}
+
+footer .container{
+  display: grid;
+  gap: 3rem;
+}
+
+footer .container .footer-links .footer-contact h3{
+  font-size: 1.5rem;
+  color: #accc4c;
+  margin-bottom: 2rem;
+}
+
+footer .contact-links{
+  display: grid;
+  gap: 1rem;
+  
+}
+
+footer .contact-links a{
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 30px 1fr;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+footer .contact-links a i{
+  font-size: 1.5rem;
+  color: #accc4c;
+}
+
+.social-media-links{
+  margin-top: 4rem;
+}
+
+.social-media-links h4{
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #accc4c;
+ 
+}
+
+
+.social-media-links .links {
+  display: flex;
+  gap: 1rem;
+
+  
+
+}
+.social-media-links .links a i{
+  font-size: 2.6rem;
+  color: #ACCC4C;
+}
+
+
+
+
+.footer-footer{
+  margin-top: 6rem;
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: .8rem;
+}
+
+.footer-footer img{
+  margin: 1rem auto;
+  
+}
+
 @media (min-width: 1100px) {
 
   :root {
@@ -721,6 +802,16 @@ main {
   #banner-form form{
    margin-left: auto;
    padding: 4rem 2rem;
+  }
+
+  footer .footer-links{
+    display: grid;
+    grid-template-columns:3fr 1fr;
+    align-items: start;
+  }
+
+  .social-media-links {
+    margin-top:  0;
   }
 
 
