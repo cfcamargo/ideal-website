@@ -385,6 +385,7 @@ main {
   gap: 1rem;
   color: #54671d;
   max-width: 500px;
+  margin: 0 auto;
 }
 
 #banner-form form .campo {
@@ -669,6 +670,7 @@ footer .contact-links a i {
   }
 
   #banner-form form {
+    margin-right: 0;
     margin-left: auto;
     padding: 4rem 2rem;
   }
