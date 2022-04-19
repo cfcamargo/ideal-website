@@ -41,5 +41,12 @@ function changeHeaderShadowOnScroll() {
 
 
 
+const actualDate = document.querySelector('#date')
+
+const data = new Date()
+  year = data.getFullYear()
+
+    actualDate.innerHTML = `2020 - ${year}`
+
 // Scroll Reveal
 ScrollReveal().reveal('#home .container h1, #services .container .content, #about .description, #about .cover, #results .container h3, #results .container .uk-slider-container-offset, #prevent .container, #client-results .container .header, #client-results.container .uk-position-relative, #banner-form .container form, #contact .container .footer-links, #contact .container .footer-footer' ,{ interval: 16, reset: true, origin: top});
