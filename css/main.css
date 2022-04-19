@@ -429,7 +429,7 @@ main {
   border: none;
   outline: none;
   width: 100%;
-  padding: 1rem 1rem;
+  padding: 1rem .5rem;
 }
 
 #banner-form form .submit {
