@@ -321,42 +321,6 @@ main {
   color: #677a1e;
 }
 
-/*
-
-#results .swipper-content {
-  padding: 4rem;
-  display: grid;
-  gap: 2rem;
-  justify-content: center;
-  text-align: center;
-  color: #677a1e;
-}
-
-#results .swipper-content h3 {
-  font-size: 1.5rem;
-}
-
-#results .swipper-content img {
-  margin: 0 auto;
-  width: 100%;
-}
-
-
-.swiper{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-}
-
-
-
-.swiper-button-next,
-.swiper-button-prev{
-  color: #ACCC4C;
-}
-
-*/
 
 .uk-card {
   height: 700px;
@@ -391,6 +355,20 @@ main {
 
 #client-results {
   padding: 8rem 1rem;
+  text-align: center;
+}
+
+#client-results h3{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #677a1e;
+}
+
+#client-results p{
+  width:90%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  color: #54671d;
 }
 
 #banner-form {
@@ -438,6 +416,8 @@ main {
   border: none;
   color: white;
   cursor: pointer;
+  width: 100%;
+  height: 40px;
 }
 
 #banner-form form .submit:hover {
@@ -483,6 +463,7 @@ footer .contact-links a {
   justify-content: center;
   align-items: center;
   color: white;
+  text-decoration: none;
 }
 
 footer .contact-links a i {
@@ -503,6 +484,14 @@ footer .contact-links a i {
 .social-media-links .links {
   display: flex;
   gap: 1rem;
+}
+
+.social-media-links .links a{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: white;
+  text-decoration: none;
 }
 .social-media-links .links a i {
   font-size: 2.6rem;
@@ -650,49 +639,6 @@ footer .contact-links a i {
     margin-bottom: 0;
   }
 
-  /*
-  .swiper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
- 
-
-  #results .swipper-content {
-    padding: 4rem;
-    grid-template-columns: 1fr 1fr;
-    display: grid;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 700px;
-  }
-
-  #results .swipper-content .cover {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #results .swipper-content .description {
-    height: 100%;
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #results .swipper-content .cover img {
-    margin: 0 auto;
-    height: 90% !important;
-    width: auto;
-  }
-
-  */
 
   #prevent .container {
     display: grid;
@@ -725,6 +671,18 @@ footer .contact-links a i {
     margin-left: auto;
     padding: 4rem 2rem;
   }
+
+
+  #client-results h3{
+    font-size: 2.2rem;
+    
+  }
+  
+  #client-results p{
+    width:60%;
+   
+  }
+  
 
   footer .footer-links {
     display: grid;

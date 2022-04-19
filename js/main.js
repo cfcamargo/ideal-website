@@ -41,17 +41,5 @@ function changeHeaderShadowOnScroll() {
 
 
 
-// Initializer Swipper
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+// Scroll Reveal
+ScrollReveal().reveal('#home .container h1, #services .container .content, #about .description, #about .cover, #results .container h3, #results .container .uk-slider-container-offset, #prevent .container, #client-results .container .header, #client-results.container .uk-position-relative, #banner-form .container form, #contact .container .footer-links, #contact .container .footer-footer' ,{ interval: 16, reset: true, origin: top});
