@@ -17,7 +17,7 @@
 # Links Uteis
 
 URL do site:
-idealtecnologiaagricola.com
+http://idealtecnologiaagricola.com
 
 UIki : 
 https://getuikit.com
