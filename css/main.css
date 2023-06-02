@@ -1,8 +1,11 @@
 :root {
   --header-height: 5.5rem;
 
+  --dark-gray : #201E1E;
+
   --bg-green: #54671d;
   --bg-green-light: #677a1e;
+
 
   --text-green: #617721;
   --text-secondary-green: #54671d;
@@ -45,7 +48,6 @@ a {
 }
 
 #header {
-  border-bottom: 1px solid #e4e4e4;
   margin-bottom: 2rem;
   display: flex;
 
@@ -53,7 +55,7 @@ a {
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: white;
+  background-color: var(--dark-gray);
   width: 100%;
   height: var(--header-height);
 }
@@ -70,6 +72,7 @@ main {
 .logo {
   font: 700 1.31rem 'Poppins', sans-serif;
   color: var(--title-color);
+  max-width: 100px;
 }
 
 .logo span {
@@ -156,6 +159,10 @@ nav.show .menu ul {
   display: grid;
 }
 
+.uk-card-title {
+  visibility: 1 !important;
+}
+
 nav.show ul.grid {
   gap: 4rem;
 }
@@ -192,10 +199,9 @@ main {
 
 #home {
   width: 100%;
-  height: calc((100vh - var(--header-height)) + 7rem);
-  background: url(../assets/images/bg_home.png);
-  background-size: cover;
-  background-position: center;
+  height: calc((100vh - var(--header-height)));
+  background-color: var(--dark-gray);
+  overflow-x: hidden;
 }
 
 #home .container {
@@ -207,16 +213,61 @@ main {
   height: 100%;
 }
 
-#home h1 {
+#home .container .home-container{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+#home .container .home-container .home-description{
+  display: flex;
+  flex-direction: column;
+}
+
+#home .container .home-container .home-description h1 {
   margin-top: -6rem;
   font-size: 1.5rem;
   text-align: center;
-  color: white;
-  width: 80%;
+  color: var(--green-light);
   margin: 0 auto;
 
   font-family: 'Poppins' sans-serif;
   font-weight: bold;
+}
+
+
+#home .container .home-container .home-description p {
+  text-align: center;
+  color: white;
+}
+
+#home .container .home-container .home-cover {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#home .container .home-container .home-cover img{
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  z-index: 1;
+}
+
+#home-cover-blur{
+  background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(217, 217, 217, 0.666667) 47.4%, rgba(217, 217, 217, 0) 100%);
+  filter: blur(130px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 70%;
+  height: 70%;
+  z-index: 0;
 }
 
 #about {
@@ -257,59 +308,78 @@ main {
   width: 100%;
 }
 
-#services {
+#services-resum {
   width: 100%;
-  background-color: #54671d;
   padding: 8rem 1rem;
-  margin-top: -6rem;
-  border-radius: 2rem 2rem 2rem 0;
+  font-display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#services .content {
-  display: grid;
-  grid-template-rows: 1fr auto;
-  justify-content: center;
+.services-resum-description h3{
+  color: var(--green-light);
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.services-resum-description p{
+  color: var(--dark-gray);
+  text-align: center;
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#services-resum .content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#services-resum .content .cards{
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
 }
 
-#services .description h3 {
-  font-size: 1.5rem;
-  color: white;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-#services .description p {
-  font-size: 1rem;
-  color: white;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-#services .content .services-card {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-
-#services .content .services-card .card-item {
-  display: grid;
-  gap: 1rem;
-  justify-content: center;
+#services-resum .content .cards .card{
+  display: flex;
+  flex-direction: column;
   align-items: center;
-
-  background-color: #accc4c;
-  padding: 2rem;
-  text-align: center;
+  justify-content: center;
+  margin-top: 3rem;
 }
 
-#services .content .services-card .card-item h4 {
-  color: white;
+#services-resum .content .cards .card p{
+ text-align: center;
 }
 
-#services .content .services-card .card-item p {
-  color: #54671d;
+#service .container .services-content  {
+  display: flex;
+  flex-direction: column;
+
+}
+
+#service .container .services-content-reverse  {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
+
+}
+
+#service .container .services-content h5,
+#service .container .services-content-reverse  h5{
+  font-size: 2rem;
+  margin-top: 4rem;
+  color: var(--green-light);
+  font-weight: bold;
+
+}
+
+#results {
+  margin-top: 10rem;
 }
 
 #results .container > h3 {
@@ -317,7 +387,7 @@ main {
   font-weight: bold;
   margin-top: 4rem;
   margin-bottom: 5rem;
-  text-align: center;
+  text-align: left;
   color: #677a1e;
 }
 
@@ -531,7 +601,7 @@ footer .contact-links a i {
   }
 
   nav ul li a {
-    color: #54671d;
+    color: white;
   }
 
   nav .menu ul li a.title {
@@ -590,10 +660,52 @@ footer .contact-links a i {
     --subtitle-font-size: 1.125rem;
   }
 
+
   .menu {
     display: grid;
     justify-content: flex-end;
     align-items: center;
+  }
+
+  #home .container .home-container {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+  }
+
+  #home .container .home-container .home-description h1{
+    text-align: start;
+    width: 100%;
+    font-size: 1.8rem;
+  }
+
+  #home .container .home-container .home-description p{
+    text-align: start;
+  }
+
+  #service .container .services-content,
+  #service .container .services-content-reverse   {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+
+  }
+
+  #service .container .services-content  h5,
+  #service .container .services-content-reverse h5{
+    font-size: 2rem;
+    margin-top: 4rem;
+    color: var(--green-light);
+    text-align: right;
+  }
+
+  #service .container .services-content-reverse h5{
+    text-align: left;
+  }
+
+  #service .container .services-content  p{
+    text-align: right;
   }
 
   #about {
@@ -614,31 +726,10 @@ footer .contact-links a i {
     align-items: center;
   }
 
-  #services .content {
+  #services-resum .content .cards{
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  #services .content .services-card {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-
-  #services .description h3 {
-    font-size: 2.5rem;
-    color: white;
-    text-align: right;
-    margin-bottom: 2rem;
-  }
-
-  #services .description p {
-    text-align: right;
-    margin-bottom: 0;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
   }
 
 
@@ -678,14 +769,14 @@ footer .contact-links a i {
 
   #client-results h3{
     font-size: 2.2rem;
-    
+
   }
-  
+
   #client-results p{
     width:60%;
-   
+
   }
-  
+
 
   footer .footer-links {
     display: grid;
