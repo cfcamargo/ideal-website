@@ -321,6 +321,8 @@ main {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  max-width: 200px;
+  max-height: 250px;
 }
 
 .product-card img{
@@ -330,7 +332,6 @@ main {
 
 #product-copy {
   color: var(--dark-gray);
-  margin-left: 2rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -339,6 +340,7 @@ main {
 #product-copy h3{
   font-size: 1.2rem;
   color: white;
+  text-align: center;
 }
 
 #about {
